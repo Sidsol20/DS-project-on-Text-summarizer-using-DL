@@ -39,18 +39,9 @@
                     <br>
                     <button type="submit" class="btn btn-primary">Grammar Checker</button>
                 </form>
-
+                
                 <br>
-
-                <!-- Plagiarism Checker Form -->
-                <form method="post" action="{{ url_for('plagiarism_checker') }}">
-                    <textarea class="form-control" name="inputtext_" rows="5" placeholder="Enter text for plagiarism check"></textarea>
-                    <br>
-                    <button type="submit" class="btn btn-primary">Plagiarism Check</button>
-                </form>
-
-                <br>
-
+                
                 <!-- Translation Form -->
                 <form method="post" action="{{ url_for('translate') }}">
                     <textarea class="form-control" name="inputtext_" rows="5" placeholder="Enter text for translation"></textarea>
@@ -58,25 +49,9 @@
                     <input type="text" name="target_lang" class="form-control" placeholder="Enter target language code (e.g., es, fr, de)">
                     <br>
                     <button type="submit" class="btn btn-primary">Translate</button>
-                </form>
-
-                <br>
-
-                <!-- Paraphraser Form -->
-                <form method="post" action="{{ url_for('paraphrase') }}">
-                    <textarea class="form-control" name="inputtext_" rows="5" placeholder="Enter text for paraphrasing"></textarea>
                     <br>
-                    <button type="submit" class="btn btn-primary">Paraphrase</button>
                 </form>
-
                 <br>
-
-                <!-- AI Detector Form -->
-                <form method="post" action="{{ url_for('ai_detector') }}">
-                    <textarea class="form-control" name="inputtext_" rows="5" placeholder="Enter text to detect if AI-generated"></textarea>
-                    <br>
-                    <button type="submit" class="btn btn-primary">AI Detector</button>
-                </form>
 
             </div>
         </div>

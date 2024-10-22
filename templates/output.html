@@ -40,26 +40,9 @@
                     </ul>
                 {% endif %}
 
-                {% if data.plagiarism_percentage %}
-                    <h3>Plagiarism Check:</h3>
-                    <p>Plagiarism Percentage: {{ data.plagiarism_percentage }}%</p>
-                    <p>Report: {{ data.plagiarism_report }}</p>
-                {% endif %}
-
                 {% if data.translated_text %}
                     <h3>Translated Text:</h3>
                     <p>{{ data.translated_text }}</p>
-                {% endif %}
-
-                {% if data.paraphrased_text %}
-                    <h3>Paraphrased Text:</h3>
-                    <p>{{ data.paraphrased_text }}</p>
-                {% endif %}
-
-                {% if data.ai_detected %}
-                    <h3>AI Detection:</h3>
-                    <p>AI Detected: {{ data.ai_detected }}</p>
-                    <p>Confidence Score: {{ data.confidence_score }}</p>
                 {% endif %}
 
                 <br>
